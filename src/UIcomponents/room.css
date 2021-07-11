@@ -100,9 +100,10 @@ footer{
     text-shadow: 0px 0px 30px #ffffff;
 }
 .ChatRoomlayout{
-    display: grid;
-    grid-template-rows: auto auto auto;
-    grid-row: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .formToCollect{
     display: grid;

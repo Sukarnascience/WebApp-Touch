@@ -15,7 +15,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 firebase.initializeApp({
-    // Use Yours 
+    // Use Yours
 })
 
 const auth = firebase.auth();
