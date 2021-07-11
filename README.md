@@ -4,3 +4,5 @@ its a **Web based PWA chatting APP** Which is made on the top of react library f
 
 # Live Demo:
 Open The Page: [CLICK HERE](https://globalroom-73408.web.app/)
+
+## Licence Under: [MIT Licence](LICENCE)
