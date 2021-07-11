@@ -15,7 +15,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 firebase.initializeApp({
-    // Confidential Data
+    // Use Yours 
 })
 
 const auth = firebase.auth();
@@ -38,7 +38,6 @@ function LobbyRoom(){
 
     const SignIn = () =>{
         const UserSigninData = new firebase.auth.GoogleAuthProvider();
-        auth.useDeviceLanguage();
         auth.signInWithPopup(UserSigninData);
     }
 
