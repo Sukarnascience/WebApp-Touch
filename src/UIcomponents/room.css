@@ -1,0 +1,244 @@
+/* LobbyRoom */ 
+
+.SignInBTN{
+    text-align: center;
+    font-size: 30px;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #6bd5ff;
+    border-color: transparent;
+    display: inline-block;
+    box-shadow: 0px 0px 30px -10px #6bd5ff;
+    transition: all 0.5s ease 0s;
+}
+.SignInBTN:hover{
+    border-color: transparent;
+    color: #ffffff;
+    box-shadow: 0px 0px 30px -5px #ffffff;
+    letter-spacing: 3px;
+}
+.guidelines{
+    color:#6bd5ff;
+    text-align: center;
+    font-size: 15px;
+}
+.readguidelines{
+    background-color: transparent;
+    border-radius: 50px;
+    border-color: transparent;
+}
+.lobbyroom{
+    align-items: center;  
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-row-gap: 10px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.readGuidelines{
+    background-color: transparent;
+    box-shadow: 0px 0px 40px 0px #6bd5ff;
+    border-radius: 15px;
+    color: #6bd5ff;
+}
+.completedreading{
+    background-color: transparent;
+    border-radius: 50px;
+    border-color: transparent;    
+}
+.alertLine{
+    margin: 8px;
+    color: rgb(255, 118, 94);
+}
+
+/* ChatRoom */
+
+.Avatar{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    padding: 5px 5px;
+    margin: 0 0;
+}
+.headerAlign{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 0px; 
+}
+header{
+    top:0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    position:fixed;
+    color: #6bd5ff;
+    background-color: rgb(53, 53, 53);
+    box-shadow: 0px 0px 30px -10px #6bd5ff;
+}
+.SignOutBTN{
+    border-color: transparent;
+    background-color: transparent;
+    padding: 0 0;
+    margin: 0 0;
+}
+.headerTitle{
+    text-align: left;
+    text-shadow: 0px 0px 30px #ffffff;
+}
+footer{
+    position:fixed;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(53, 53, 53);
+    box-shadow: 0px 0px 30px -10px #6bd5ff;
+    color: #6bd5ff;
+    text-shadow: 0px 0px 30px #ffffff;
+}
+.ChatRoomlayout{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-row: 5px;
+}
+.formToCollect{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-column: 0px;
+}
+.inputBox{
+    padding: 5px 5px;
+    margin: 5px 4px;
+    background-color: transparent;
+    border-bottom : 2px solid #6bd5ff;
+    border-radius: 50px;
+    outline: none;
+    font-size: 25px;
+    color: #6bd5ff;
+    width: auto;
+}
+.msgSendBTN{
+    padding: 0 0;
+    margin: 0 0;
+    border-color: transparent;
+    background-color: transparent;
+    border-radius: 50px;
+    transition: all 0.5s ease 0s;
+    width: auto;
+}
+.msgSendBTN:disabled{
+    opacity: 0.5;
+}
+.msgsent{/*
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: right;
+    grid-column: 0px;
+    flex-direction: row-reverse;
+    display: flex;
+    flex-direction: row;
+    align-items: center;*/
+    display: flex;
+    flex-direction: row;
+    align-content: right;
+    justify-content:flex-end;
+    padding: 0px;
+}
+.msgsent p{
+    padding: 10px 10px;
+    border-radius: 12px 12px 4px 12px;
+    position: relative;
+    text-align: center;
+    background: #6bd5ff;
+    color: rgb(31, 31, 31);
+    transition: all 0.5s ease 0s;
+    right: 0;
+}
+.msgsent p:hover{
+    box-shadow: 0px 0px 30px -10px #6bd5ff;
+}
+.msgreceived{/*
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column: 0px;
+    flex-direction: row-reverse;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;*/
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: flex-start;
+    padding: 0px;
+}
+.msgreceived img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin: 2px 5px;
+}
+.msgreceived p{
+    margin-bottom: 12px;
+    padding: 10px 10px;
+    border-radius: 4px 12px 12px 12px;
+    position: relative;
+    text-align: left;
+    background: #dddbe6;
+    color: black;
+    transition: all 0.5s ease 0s;
+}
+.msgreceived p:hover{
+    box-shadow: 0px 0px 30px -10px #6bd5ff;
+}
+.msgerror{
+    border-radius: 15px;
+    color: rgb(255, 255, 123);
+    margin: 2px 2px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding: 0px;
+    background-color: transparent;
+    text-align: center;
+    box-shadow: 0px 0px 30px -10px rgb(255, 255, 123);
+    transition: all 0.5s ease 0s;
+}
+.msgerror:hover{
+    background-color: rgba(241, 153, 153, 0.096);
+    color: rgb(255, 123, 123);
+    box-shadow: 0px 0px 30px -5px rgb(255, 123, 123);
+    letter-spacing: 2px;
+}
+main{
+    top:82px;
+    right: 5px;
+    left: 5px;
+    bottom: 55px;
+    overflow-y: scroll;
+    position: fixed;/*
+    display: grid;
+    grid-template-rows: auto;
+    grid-row-gap: 4px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content:initial;
+    padding: 8px;
+}
+  
+main::-webkit-scrollbar {
+    width: 0.25rem;
+}
+  
+main::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+  
+main::-webkit-scrollbar-thumb {
+    background: #6bd5ff;
+}
