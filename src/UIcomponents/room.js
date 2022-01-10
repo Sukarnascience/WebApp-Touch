@@ -15,7 +15,14 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 firebase.initializeApp({
-    // Use Yours
+    apiKey: "AIzaSyCgRpuMaCh9x6pLhc0PV_JRoXuWpcF7lKU",
+    authDomain: "globalroom-73408.firebaseapp.com",
+    databaseURL: "https://globalroom-73408-default-rtdb.firebaseio.com",
+    projectId: "globalroom-73408",
+    storageBucket: "globalroom-73408.appspot.com",
+    messagingSenderId: "678578689057",
+    appId: "1:678578689057:web:048e2e6f4304fd658dff60",
+    measurementId: "G-1BL544L3HT"
 })
 
 const auth = firebase.auth();
